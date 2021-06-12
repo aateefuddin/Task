@@ -1,0 +1,283 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white hh-navigation-wraper">
+  <div class="container-fluid px-4 hh-navbar-resp">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand py-md-0 text-center me-0" routerLink="/Home">
+          <img src="/assets/img/logo.PNG" alt="HomeHosp" class="hh-logo-img">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="/Home">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="javascript:void(0)">My Appointments</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="javascript:void(0)">Delegated Access</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="javascript:void(0)">Ads</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="javascript:void(0)">Book Appointment</a>
+          </li>
+          </ul>
+      </div>
+      <div class="hh-notification-wraper me-3 ms-2">
+          <mat-icon matBadge="3" matBadgeOverlap="true" matBadgeSize="small" matBadgeColor="warn">notifications</mat-icon>
+      </div>
+      <div class="hh-profile-wraper">
+          <a href="javascript:void(0)" [matMenuTriggerFor]="menu">
+              <img src="/assets/img/profile.jpg" alt="Profile" class="hh-profile-img">
+          </a>
+      </div>
+      <mat-menu #menu="matMenu" xPosition="before" class="bg-white">
+          <div class="w-100 px-4 py-2 bg-light">
+              <div class="fw-bold">Leo Langlois</div>
+              <div class="small text-muted">leolanglois@gmail.com</div>
+          </div>
+          <button mat-menu-item>
+              <mat-icon>person</mat-icon>
+              <span>Profile</span>
+          </button>
+          <button mat-menu-item>
+              <mat-icon>logout</mat-icon>
+              <span>Logout</span>
+          </button>
+      </mat-menu>
+  </div>
+</nav>
+<div class="container-fluid p-4  hh-content">
+  <div class="row">
+      <div class="col-md-8 mb-4">
+          <div class="card">
+              <div class="card-body">
+                <h2 class="hh-welcome-heading">Welcome <b>Arkenea Technology.</b></h2>
+                <p class="hh-welcome-desc">We're  super excited to have you on board to my assignment</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="hh-uc-ap-title">Upcoming Appointments</h5>
+              </div>
+              <div>
+                  <carousel [cellWidth]="'100%'" [height]="90" [cellsToShow]='1'>
+                      <div class="carousel-cell">
+                          <div class="hh-ap-slider-wraper">
+                              <div class="hh-ap-slide">
+                                  <div class="hh-ap-dr-wraper">
+                                      <div class="hh-dr-img">
+                                          <img src="/assets/img/man-4.jpg" alt="Dr. Shaun Marsh" class="" width="100%">
+                                      </div>
+                                      <div class="hh-dr-detail">
+                                          <div class="hh-dr-name">
+                                              Dr. Joe Das
+                                          </div>
+                                          <div class="hh-dr-time">
+                                              <span class="hh-dr-time-icon">
+                                                  <img src="/assets/img/clock.png" alt="" class="img-fluid">
+                                              </span>
+                                              <span class="hh-slider-ap-time">12:30pm</span>
+                                              <span class="small text-muted">Sep 16, 2020</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="hh-dr-btn-detail text-center">
+                                      <button class="btn btn-info btn-sm mt-2 text-white" type="button">View Details</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-cell">
+                          <div class="hh-ap-slider-wraper">
+                              <div class="hh-ap-slide">
+                                  <div class="hh-ap-dr-wraper">
+                                      <div class="hh-dr-img">
+                                          <img src="/assets/img/man1.jpg" alt="Dr. Shaun Marsh" class="" width="100%">
+                                      </div>
+                                      <div class="hh-dr-detail">
+                                          <div class="hh-dr-name">
+                                              Dr. Shaun Marsh
+                                          </div>
+                                          <div class="hh-dr-time">
+                                              <span class="hh-dr-time-icon">
+                                                  <img src="/assets/img/clock.png" alt="" class="img-fluid">
+                                              </span>
+                                              <span class="hh-slider-ap-time">12:30pm</span>
+                                              <span class="small text-muted">Sep 16, 2020</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="hh-dr-btn-detail text-center">
+                                      <button class="btn btn-info btn-sm mt-2 text-white" type="button">View Details</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-cell">
+                          <div class="hh-ap-slider-wraper">
+                              <div class="hh-ap-slide">
+                                  <div class="hh-ap-dr-wraper">
+                                      <div class="hh-dr-img">
+                                          <img src="/assets/img/man-2.jpg" alt="Dr. Shaun Marsh" class="" width="100%">
+                                      </div>
+                                      <div class="hh-dr-detail">
+                                          <div class="hh-dr-name">
+                                              Dr. Shaun Marsh
+                                          </div>
+                                          <div class="hh-dr-time">
+                                              <span class="hh-dr-time-icon">
+                                                  <img src="/assets/img/clock.png" alt="" class="img-fluid">
+                                              </span>
+                                              <span class="hh-slider-ap-time">12:30pm</span>
+                                              <span class="small text-muted">Sep 16, 2020</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="hh-dr-btn-detail text-center">
+                                      <button class="btn btn-info btn-sm mt-2 text-white" type="button">View Details</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </carousel>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-body">
+                  <div class="row hh-form-wrapper">
+                      <div class="col-md-3">
+                          <small class="hh-input-label d-flex">Location</small>
+                          <mat-form-field appearance="legacy">
+                              <mat-label>City, State or Zip</mat-label>
+                              <input matInput>
+                              <mat-icon matSuffix>search</mat-icon>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-3">
+                          <small class="hh-input-label d-flex ps-2">Within Distance</small>
+                          <mat-slider class="py-0" min="0" max="25" step="1" value="2"></mat-slider>
+                          <div class="d-flex justify-content-between px-2">
+                              <span class="hh-input-label">0 mi</span>
+                              <span class="hh-input-label">25 mi</span>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <mat-form-field>
+                              <mat-label>Select Specialities</mat-label>
+                              <mat-select>
+                                  <mat-option>Option 1</mat-option>
+                                  <mat-option>Option 2</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-2">
+                          <mat-form-field>
+                              <mat-label>Insurance</mat-label>
+                              <mat-select>
+                                  <mat-option>Option 1</mat-option>
+                                  <mat-option>Option 2</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-2">
+                          <mat-form-field>
+                              <mat-label>Select languages</mat-label>
+                              <mat-select>
+                                  <mat-option>Option 1</mat-option>
+                                  <mat-option>Option 2</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-2">
+                          <small class="hh-input-label d-flex mb-2">Gender</small>
+                          <mat-radio-group aria-label="Select an option">
+                              <mat-radio-button value="Male">Male</mat-radio-button>
+                              <mat-radio-button value="Female" checked>Female</mat-radio-button>
+                          </mat-radio-group>
+                      </div>
+                      <div class="col-md-3">
+                          <mat-form-field>
+                              <mat-label>Select Affiliations</mat-label>
+                              <mat-select>
+                                  <mat-option>Option 1</mat-option>
+                                  <mat-option>Option 2</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-3">
+                          <mat-form-field>
+                              <mat-label>Select Provider Types</mat-label>
+                              <mat-select>
+                                  <mat-option>Option 1</mat-option>
+                                  <mat-option>Option 2</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-2">
+                          <mat-form-field>
+                              <mat-label>Select Provider Sub Types</mat-label>
+                              <mat-select>
+                                  <mat-option>Option 1</mat-option>
+                                  <mat-option>Option 2</mat-option>
+                              </mat-select>
+                          </mat-form-field>
+                      </div>
+                      <div class="col-md-2">
+                          <button class="btn btn-info btn-sm mt-2 text-white" type="button">Reset Filters</button>
+                      </div>
+                  </div>
+                  <div class="hh-result">
+                      <p class="hh-result-records my-2">{{doctors.length}} Records Found
+                      </p>
+                      <div class="row">
+                          <div class="col-12 col-md-4 col-sm-6 mb-3" *ngFor="let doctor of doctors">
+                              <div class="hh-dr-card">
+                                  <div class="hh-dr-info">
+                                      <div class="hh-dr-img">
+                                          <img src="{{doctor.image}}" alt="Dr. Shaun Marsh" class="" width="100%">
+                                      </div>
+                                      <div class="hh-dr-detail">
+                                          <div class="hh-dr-name">
+                                              {{doctor.name}}, <span class="text-muted">{{doctor.gender}}({{doctor.age}})</span>
+                                          </div>
+                                          <div class="hh-dr-spl">{{doctor.speciality}}</div>
+                                      </div>
+                                  </div>
+                                  <div class="hh-dr-othr-detail">
+                                      <div class="row g-0">
+                                          <div class="col-md-6 align-items-center d-flex">
+                                              <mat-icon>add_location</mat-icon>
+                                              <span>{{doctor.location}}</span>
+                                          </div>
+                                          <div class="col-md-6 align-items-center d-flex">
+                                              <mat-icon>business</mat-icon>
+                                              <span>{{doctor.hospital}}</span>
+                                          </div>
+                                          <div class="col-md-6 align-items-center d-flex">
+                                              <mat-icon>payment</mat-icon>
+                                              <span>{{doctor.payment}}</span>
+                                          </div>
+                                          <div class="col-md-6 align-items-center d-flex">
+                                              <mat-icon [ngClass]="doctor.preferred ? 'text-warning' : 'text-muted'">star</mat-icon>
+                                              <span>Preferred Doctor</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
