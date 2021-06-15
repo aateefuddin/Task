@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,7 @@ export class HomeComponent implements OnInit {
   Response:any;
   doctors:any[] = []
 
-  constructor(private apiservice:ApiService) { }
+  constructor(private apiservice:ApiService, config : IvyCarouselModule ) { }
 
   ngOnInit(): void {
     this.ShowAllDoctors();
